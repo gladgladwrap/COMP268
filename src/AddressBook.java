@@ -8,8 +8,8 @@ import java.util.Scanner;
  *  a single contact entry in an address book. 
  *  
  *  Using promptNewContact() we can prompt the user for all of their contact details
- *  It allows us to compare names.
- *  It runs input validation.
+ *  static method compareNames() allows us to compare names
+ *  promptNewContact() runs input validation before passing off arguments to the constructor
  * 
  * @author Dylan
  * Student Id: 3352271
@@ -333,8 +333,8 @@ public class AddressBook {
 		System.out.println("Enter your Facebook Id");
 		this.setFacebookId(keyboard.nextLine());
 		
-		//Close scanner and System.in
-		keyboard.close();
+		//Close scanner and System.in because of resource leak
+		//keyboard.close();
 	}
 	
 	
@@ -351,6 +351,6 @@ public class AddressBook {
 		"Cell Phone: " + this.getCellPhone() + "\n" +
 		"Web Site: " + this.getPersonalWebsite() + "\n" +
 		"Skype Id: " + this.getSkypeId() + "\n" +
-		"Facebook Id: " + this.getFacebookId();
+		"Facebook Id: " + this.getFacebookId() + "\n";
 	}
 }
