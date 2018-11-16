@@ -74,6 +74,8 @@ public class FindDistance {
 			
 		} while (pointBuffer.length != 2);
 		
+		keyboard.close();
+		
 		double x2 = Double.parseDouble( pointBuffer[0] );
 		
 		double y2 = Double.parseDouble( pointBuffer[1] );

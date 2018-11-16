@@ -98,9 +98,12 @@ public class CalculateBonus {
 		if (annualSavings > annualMinimum)
 			totalBonus += (annualSavings - annualMinimum) * ANNUAL_BONUS_RATE;
 		
-		// Add any extra bonuses for annual savings 25% greater than their annual minimum 
+		// Add any extra bonuses for annual savings 25% greater than their annual minimum
+		// For instance, if an employee commits to saving $10,000 / year, and they
+		// save $12,500, then $2,500 extra is added. 
+		// If the employee saves $14,000, then $4,000 extra is added.
 		if (annualSavings > annualMinimum * 1.25 )
-			totalBonus += (annualSavings - annualMinimum * 1.25 );	
+			totalBonus += (annualSavings - annualMinimum );	
 		
 		return totalBonus;
 	}

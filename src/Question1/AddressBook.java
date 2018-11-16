@@ -1,3 +1,4 @@
+package Question1;
 import java.util.Scanner;
 
 /**
@@ -20,6 +21,8 @@ import java.util.Scanner;
 
 public class AddressBook {
 	
+	// Each field name is self explanatory. 
+	// Each one will hold the details for what the field is named
 	private String firstName, 
 		   middleName,
 		   lastName,
