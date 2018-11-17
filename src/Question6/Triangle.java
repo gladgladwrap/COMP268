@@ -15,7 +15,7 @@ package Question6;
 
 public class Triangle {
 	
-	private boolean rightTriangle;	// Why on earth is this in the API if it does not have a set method and it is private?
+	//private boolean rightTriangle;	// Why on earth is this in the API if it does not have a set method and it is private?
 	//adjacent side of triangle
 	private double a;
 	//opposite side of triangle

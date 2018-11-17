@@ -1,5 +1,21 @@
 package Question8;
 
+/*
+ * Assignment 1, COMP268
+ * Class: Main.java
+ * 
+ * Has the array of Candidates
+ * and calls getEligibleCandidates 
+ * so we can have a list of who is eligible
+ * to be interviewed by Google
+ *  
+ * @author Dylan Cooper
+ * StudentID: 3352271
+ * @since 14/11/2018 
+ * @version 1.0
+ * 
+ */
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -22,6 +38,9 @@ public class Main {
 				new Candidate("Kate", "Hen", 87.90, "poor", false, 0.8)
 		};
 
+		System.out.println( Candidate.getEligibleCandidates(cands) );
+		
+		
 	}
 
 }

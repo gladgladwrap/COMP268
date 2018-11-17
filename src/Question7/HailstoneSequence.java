@@ -3,6 +3,25 @@ package Question7;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+/*
+ * Assignment 1, COMP268
+ * Class: HailstoneSequence.java
+ * 
+ * This class provides a static method to produce the hailstone sequence
+ * for a user-given number.
+ * If the number is even, it divides the number by 2 and then adds that number to
+ * the array list.
+ * If the number is odd, it multiplies it by 3 and adds 1 and then adds that number
+ * to the array list.
+ * The sequence is complete when 1 is reached.
+ *  
+ * @author Dylan Cooper
+ * StudentID: 3352271
+ * @since 14/11/2018 
+ * @version 1.0
+ * 
+ */
+
 public class HailstoneSequence {
 
 	public static void main(String[] args) {
@@ -48,6 +67,7 @@ public class HailstoneSequence {
 		
 		while (n != 1) {
 			
+			// if n is even
 			if ( n % 2 == 0 ) {
 				n = n / 2;
 				sequence.add(n);
